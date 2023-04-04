@@ -18,3 +18,14 @@
     color: white;
     font-size: 15px;
 }
+
+.filter {
+    height: 45px;
+    width: 150px;
+    background-color: #CCCDDE;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #51515c;
+}

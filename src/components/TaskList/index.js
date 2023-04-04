@@ -4,12 +4,15 @@ import Task from '../Task'
 import NoTask from '../NoTask'
 
 function TaskList(props) {
-
+  const handleDelete = () => {
+    //props.taskList.slice()
+  }
+  
   return (
     <div className='taskList'>
       {
-        (props.list.length === 0)?<NoTask/>:props.list.map((item, index) => {
-             return <Task task={item} id={index} />
+        (props.taskList.length === 0)?<NoTask/>:props.taskList.map((item, index) => {
+          return <Task task={item} id={index} deleteTask={handleDelete} />
            })
       }
     </div>

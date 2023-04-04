@@ -8,11 +8,12 @@ function Task(props) {
   return (
     <div className='taskBounder'>
       <TickBox />
+      
       <div className='taskText'>
         <p className='taskContent' >{props.task.content}</p>
         <p className='taskCreateTime' >{props.task.time}</p>
       </div>
-      <DeleteBt />
+      <DeleteBt index={props.id} />
       <EditBt />
     </div>
   )

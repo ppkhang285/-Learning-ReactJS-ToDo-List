@@ -1,11 +1,16 @@
 import React from 'react'
 import './style.css'
 
-function DeleteBt() {
+function DeleteBt(props) {
+
+  const handleDelete = () => {
+    props.deleteTask(props.id);
+  }
+  
   return (
-    <div className='deleteBt'>
+    <button className='deleteBt' onClick={handleDelete}>
       
-    </div>
+    </button>
   )
 }
 

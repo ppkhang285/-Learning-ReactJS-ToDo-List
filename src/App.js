@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <p className='Title'>TODO LIST</p>
-      <FunctionBt setTaskList={setTaskList} />
-      <TaskLists list={taskList} />
+      <FunctionBt taskList={ taskList} setTaskList={setTaskList} />
+      <TaskLists taskList={ taskList} setTaskList={setTaskList} />
     </div>
   );
 }
