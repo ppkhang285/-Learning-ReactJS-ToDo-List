@@ -1,0 +1,90 @@
+.backGround {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+
+.closeBtWrapper {
+    width: 500px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.editTable {
+    width: 500px;
+    height: 341px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #ECEDF6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.edittodo {
+    font-family: "Poppins";
+    color: #646681;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title, .status {
+    font-family: "Poppins";
+    color: #646681;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.titleInput, .statusInput {
+    height: 45px;
+    font-family: "Poppins";
+    color: black;
+    font-size: 18px;
+}
+
+.btWrapper {
+margin-top: 20px;
+
+}
+.confirm {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 16px;
+    height: 41px;
+    width: 114px;
+    cursor: pointer;    
+    border: none;
+    color: white;
+    background-color: #646FF0;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+
+.cancel{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 16px;
+    height: 41px;
+    width: 97px;
+    cursor: pointer;
+    border: none;
+    color: #646681;
+    background-color: #CCCDDE;
+    border-radius: 10px;
+}

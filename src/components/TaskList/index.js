@@ -4,15 +4,42 @@ import Task from '../Task'
 import NoTask from '../NoTask'
 
 function TaskList(props) {
-  const handleDelete = () => {
-    //props.taskList.slice()
+
+  const handleDelete = (index) => {
+    let tempList = [...props.taskList];
+    tempList.splice(index, 1);
+    props.setTaskList(tempList);
+  }
+
+  const handelEditTask = (index, info) => {
+    let tempList = [...props.taskList];
+    tempList[index] = info;
+    console.log(index)
+    props.setTaskList(tempList);
   }
   
+
+  const listLength = () => {
+    let length = 0; 
+    props.taskList.map((item) => {
+      if (item.status & props.viewStatus) length += 1;
+    });
+    return length;
+  }
+  
+
+
+
   return (
     <div className='taskList'>
       {
-        (props.taskList.length === 0)?<NoTask/>:props.taskList.map((item, index) => {
-          return <Task task={item} id={index} deleteTask={handleDelete} />
+        (listLength() === 0)?<NoTask/>:props.taskList.map((item, index) => {
+          return (item.status & props.viewStatus) ?
+            <Task task={item}
+              key={index}
+              index={index}
+              deleteTask={handleDelete}
+              editTask={handelEditTask} /> : ""
            })
       }
     </div>

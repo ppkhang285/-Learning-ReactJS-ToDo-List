@@ -34,3 +34,38 @@
     margin-bottom: 0px;
     margin-top: -10px;
 }
+
+.deleteBt {
+    height: 30px;
+    width: 30px;
+    background-color: #DEDFE1;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.deleteBt:hover, .editBt:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.deletePic, .editPic {
+    width: 22px;
+    height: 22px;
+}
+
+.editBt {
+    height: 30px;
+    width: 30px;
+    background-color: #DEDFE1;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
